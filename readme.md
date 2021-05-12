@@ -32,6 +32,9 @@ Project requires [Node.js](https://nodejs.org/) , [Quasar Framework](https://qua
 
 Quasar Admin Template : https://github.com/mayank091193/quasar-admin-crm
 
+You must edit  mysitequasar\src\store\siteinformation\state.js 
+apiurl and defaultphoto url 
+
 ```sh
 npm install
 quasar dev
