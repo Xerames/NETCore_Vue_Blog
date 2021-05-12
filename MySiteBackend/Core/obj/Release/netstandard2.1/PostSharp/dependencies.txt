@@ -1,0 +1,2 @@
+C:\Users\Xerames\source\repos\MySiteBackend\Core\obj\Release\netstandard2.1\PostSharp\PostSharp.Compiler.Engine.dll
+C:\Users\Xerames\source\repos\MySiteBackend\Core\obj\Release\netstandard2.1\PostSharp\postsharp.config

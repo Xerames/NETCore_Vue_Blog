@@ -1,0 +1,2803 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PostSharp.Compiler.Hosting.CommandLine/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.3",
+          "Microsoft.Win32.Registry": "4.5.0",
+          "PostSharp": "1.0.0",
+          "PostSharp.Compiler.Common": "1.0.0",
+          "PostSharp.Compiler.Hosting": "1.0.0",
+          "PostSharp.Compiler.Platform.NetCoreApp21": "1.0.0"
+        },
+        "runtime": {
+          "PostSharp.Compiler.Hosting.CommandLine.dll": {
+            "assemblyVersion": "",
+            "fileVersion": ""
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.3": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "2.9.3",
+          "Microsoft.CodeQuality.Analyzers": "2.9.3",
+          "Microsoft.NetCore.Analyzers": "2.9.3",
+          "Microsoft.NetFramework.Analyzers": "2.9.3"
+        },
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.3": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.CodeQuality.Analyzers/2.9.3": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.DiaSymReader.Native/1.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.NetCore.Analyzers/2.9.3": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.NetFramework.Analyzers/2.9.3": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.Win32.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.Common/5.7.0": {
+        "dependencies": {
+          "NuGet.Frameworks": "5.7.0",
+          "System.Diagnostics.Process": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Common.dll": {
+            "assemblyVersion": "5.7.0.7",
+            "fileVersion": "5.7.0.6726"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.Configuration/5.7.0": {
+        "dependencies": {
+          "NuGet.Common": "5.7.0",
+          "System.Security.Cryptography.ProtectedData": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Configuration.dll": {
+            "assemblyVersion": "5.7.0.7",
+            "fileVersion": "5.7.0.6726"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.Frameworks/5.7.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {
+            "assemblyVersion": "5.7.0.7",
+            "fileVersion": "5.7.0.6726"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.Packaging/5.7.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Configuration": "5.7.0",
+          "NuGet.Versioning": "5.7.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Security.Cryptography.Cng": "5.0.0-preview.3.20214.6",
+          "System.Security.Cryptography.Pkcs": "5.0.0-preview.3.20214.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Packaging.dll": {
+            "assemblyVersion": "5.7.0.7",
+            "fileVersion": "5.7.0.6726"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.Versioning/5.7.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Versioning.dll": {
+            "assemblyVersion": "5.7.0.7",
+            "fileVersion": "5.7.0.6726"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "runtime.native.System/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Buffers/4.5.1": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Collections/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Collections.Concurrent/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Collections.Immutable/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Data.HashFunction.Core/2.0.0": {
+        "dependencies": {
+          "System.Data.HashFunction.Interfaces": "2.0.0",
+          "System.Runtime.Numerics": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Data.HashFunction.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Data.HashFunction.FNV/2.0.0": {
+        "dependencies": {
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Data.HashFunction.Core": "2.0.0",
+          "System.ValueTuple": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Data.HashFunction.FNV.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Data.HashFunction.Interfaces/2.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard1.1/System.Data.HashFunction.Interfaces.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Diagnostics.Debug/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Diagnostics.Process/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Diagnostics.Tools/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Diagnostics.Tracing/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Dynamic.Runtime/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Globalization/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.IO/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.IO.FileSystem/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.IO.FileSystem.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Linq/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Linq.Expressions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Memory/4.5.4": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.ObjectModel/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection.Emit/4.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection.Emit.ILGeneration/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection.Extensions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Reflection.TypeExtensions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Resources.ResourceManager/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Extensions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Handles/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.InteropServices/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Loader/4.3.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Numerics/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.Cng/5.0.0-preview.3.20214.6": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.Pkcs/5.0.0-preview.3.20214.6": {
+        "dependencies": {
+          "System.Security.Cryptography.Cng": "5.0.0-preview.3.20214.6"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "4.0.3.2",
+            "fileVersion": "4.6.27129.4"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.3.2",
+            "fileVersion": "4.6.27129.4"
+          }
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.ProtectedData/4.5.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Text.Encoding/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Text.Encoding.Extensions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Text.RegularExpressions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Threading/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Threading.AccessControl/4.5.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.AccessControl.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Threading.AccessControl.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "System.Threading.Tasks/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Threading.Thread/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Threading.ThreadPool/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.ValueTuple/4.4.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Xml.ReaderWriter/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Xml.XDocument/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "PostSharp/6.7.9-rc": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "PostSharp.Compiler.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.3",
+          "PostSharp": "1.0.0"
+        },
+        "runtime": {
+          "PostSharp.Compiler.Common.dll": {
+            "assemblyVersion": "",
+            "fileVersion": ""
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "PostSharp.Compiler.Engine/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.3",
+          "Microsoft.DiaSymReader.Native": "1.7.0",
+          "NuGet.Frameworks": "5.7.0",
+          "NuGet.Packaging": "5.7.0",
+          "NuGet.Versioning": "5.7.0",
+          "PostSharp": "1.0.0",
+          "PostSharp.Compiler.Common": "1.0.0",
+          "PostSharp.Compiler.Settings": "1.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Collections.Immutable": "1.3.1",
+          "System.Data.HashFunction.FNV": "2.0.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "PostSharp.Compiler.Engine.dll": {
+            "assemblyVersion": "",
+            "fileVersion": ""
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "PostSharp.Compiler.Hosting/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.3",
+          "PostSharp": "1.0.0",
+          "PostSharp.Compiler.Common": "1.0.0",
+          "PostSharp.Compiler.Engine": "1.0.0",
+          "PostSharp.Compiler.Settings": "1.0.0",
+          "System.Runtime.Loader": "4.3.0"
+        },
+        "runtime": {
+          "PostSharp.Compiler.Hosting.dll": {
+            "assemblyVersion": "",
+            "fileVersion": ""
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "PostSharp.Compiler.Platform.NetCoreApp21/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.3",
+          "Microsoft.Win32.Registry": "4.5.0",
+          "PostSharp": "1.0.0",
+          "PostSharp.Compiler.Common": "1.0.0",
+          "System.Security.Permissions": "4.5.0",
+          "System.Threading.AccessControl": "4.5.0"
+        },
+        "runtime": {
+          "PostSharp.Compiler.Platform.NetCoreApp21.dll": {
+            "assemblyVersion": "",
+            "fileVersion": ""
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "PostSharp.Compiler.Settings/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.3",
+          "PostSharp": "1.0.0",
+          "PostSharp.Compiler.Common": "1.0.0",
+          "System.Data.HashFunction.FNV": "2.0.0"
+        },
+        "runtime": {
+          "PostSharp.Compiler.Settings.dll": {
+            "assemblyVersion": "",
+            "fileVersion": ""
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Autofac/6.1.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Autofac.dll": {
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Autofac.Extras.DynamicProxy/6.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Autofac.Extras.DynamicProxy.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "AutoMapper/10.1.1": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.1.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Castle.Core/4.4.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard1.5/Castle.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "FluentValidation/9.2.2": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.2.2.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "log4net/2.0.12": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "assemblyVersion": "2.0.12.0",
+            "fileVersion": "2.0.12.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.Http/2.2.2": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.dll": {
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.2.2.19024"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.Http.Features/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.AspNetCore.WebUtilities/2.2.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Data.SqlClient/2.0.1": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
+            "assemblyVersion": "2.0.20168.4",
+            "fileVersion": "2.0.20168.4"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "2.0.20168.4",
+            "fileVersion": "2.0.20168.4"
+          },
+          "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "2.0.20168.4",
+            "fileVersion": "2.0.20168.4"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.SNI.runtime/2.0.1": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "rid": "win-arm",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "2.0.1.0"
+          },
+          "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "2.0.1.0"
+          },
+          "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "2.0.1.0"
+          },
+          "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Caching.Memory/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Configuration/2.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Identity.Core/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Identity.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Identity.Stores/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Logging/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.ObjectPool/2.2.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Options/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Identity.Client/4.14.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
+            "assemblyVersion": "4.14.0.0",
+            "fileVersion": "4.14.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/6.7.1": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "assemblyVersion": "6.7.1.0",
+            "fileVersion": "6.7.1.10630"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.IdentityModel.Logging/6.7.1": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "6.7.1.0",
+            "fileVersion": "6.7.1.10630"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.IdentityModel.Protocols/5.6.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "assemblyVersion": "5.6.0.0",
+            "fileVersion": "5.6.0.61018"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "5.6.0.0",
+            "fileVersion": "5.6.0.61018"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.IdentityModel.Tokens/6.7.1": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "6.7.1.0",
+            "fileVersion": "6.7.1.10630"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.Net.Http.Headers/2.2.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.NETCore.Targets/1.1.3": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Serilog/2.10.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.10.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Serilog.Sinks.File/4.1.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Serilog.Sinks.MSSqlServer/5.6.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netcoreapp2.1/Serilog.Sinks.MSSqlServer.dll": {
+            "assemblyVersion": "5.6.0.0",
+            "fileVersion": "5.6.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Serilog.Sinks.PeriodicBatching/2.3.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.0.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.AppContext/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Collections.NonGeneric/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Collections.Specialized/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.ComponentModel/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.ComponentModel.TypeConverter/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Configuration.ConfigurationManager/4.5.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Console/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Diagnostics.DiagnosticSource/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Diagnostics.TraceSource/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Globalization.Calendars/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Globalization.Extensions/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.IdentityModel.Tokens.Jwt/6.7.1": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "6.7.1.0",
+            "fileVersion": "6.7.1.10630"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.IO.Compression/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.IO.Compression.ZipFile/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.IO.Pipelines/5.0.0": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "System.Net.Http/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Net.Primitives/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Net.Sockets/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Private.DataContractSerialization/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Private.Uri/4.3.2": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Serialization.Formatters/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Runtime.Serialization.Json/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.Csp/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Security.SecureString/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Text.Encoding.CodePages/4.7.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Text.Encodings.Web/4.5.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Threading.Timer/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Xml.XmlDocument/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Core/1.0.0": {
+        "dependencies": {
+          "Autofac": "6.1.0",
+          "Autofac.Extras.DynamicProxy": "6.0.0",
+          "FluentValidation": "9.2.2",
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.IdentityModel.Tokens": "6.7.1",
+          "Newtonsoft.Json": "12.0.3",
+          "Serilog": "2.10.0",
+          "Serilog.Sinks.File": "4.1.0",
+          "Serilog.Sinks.MSSqlServer": "5.6.0",
+          "log4net": "2.0.12"
+        },
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "DataAccess/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "10.1.1",
+          "Entities": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "Microsoft.Extensions.Identity.Core": "5.0.0"
+        },
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Entities/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.0",
+          "Microsoft.Extensions.Identity.Stores": "5.0.0"
+        },
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "Microsoft.NETCore.Platforms/1.1.1": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "NETStandard.Library/1.6.1": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "PostSharp.Redist/6.7.9-rc": {
+        "dependencies": {},
+        "runtime": {
+          "lib/netstandard2.0/PostSharp.dll": {
+            "assemblyVersion": "6.7.9.0",
+            "fileVersion": "6.7.9.0"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/debian.8-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "debian.8-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/fedora.23-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "fedora.23-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/fedora.24-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "fedora.24-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.native.System.IO.Compression/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "runtime.native.System.Net.Http/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "runtime.native.System.Security.Cryptography.Apple/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {}
+      },
+      "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/opensuse.13.2-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "opensuse.13.2-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/opensuse.42.1-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "opensuse.42.1-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.Apple.dylib": {
+            "rid": "osx.10.10-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylib": {
+            "rid": "osx.10.10-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/rhel.7-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "rhel.7-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/ubuntu.14.04-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "ubuntu.14.04-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/ubuntu.16.04-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "ubuntu.16.04-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+        "dependencies": {},
+        "runtime": {},
+        "runtimeTargets": {
+          "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
+            "rid": "ubuntu.16.10-x64",
+            "assetType": "native",
+            "assemblyVersion": "",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PostSharp.Compiler.Hosting.CommandLine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.3",
+      "hashPath": "microsoft.codeanalysis.fxcopanalyzers.2.9.3.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.3",
+      "hashPath": "microsoft.codeanalysis.versioncheckanalyzer.2.9.3.nupkg.sha512"
+    },
+    "Microsoft.CodeQuality.Analyzers/2.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.codequality.analyzers/2.9.3",
+      "hashPath": "microsoft.codequality.analyzers.2.9.3.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.DiaSymReader.Native/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.diasymreader.native/1.7.0",
+      "hashPath": "microsoft.diasymreader.native.1.7.0.nupkg.sha512"
+    },
+    "Microsoft.NetCore.Analyzers/2.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.netcore.analyzers/2.9.3",
+      "hashPath": "microsoft.netcore.analyzers.2.9.3.nupkg.sha512"
+    },
+    "Microsoft.NetFramework.Analyzers/2.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.netframework.analyzers/2.9.3",
+      "hashPath": "microsoft.netframework.analyzers.2.9.3.nupkg.sha512"
+    },
+    "Microsoft.Win32.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.win32.primitives/4.3.0",
+      "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "NuGet.Common/5.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "nuget.common/5.7.0",
+      "hashPath": "nuget.common.5.7.0.nupkg.sha512"
+    },
+    "NuGet.Configuration/5.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "nuget.configuration/5.7.0",
+      "hashPath": "nuget.configuration.5.7.0.nupkg.sha512"
+    },
+    "NuGet.Frameworks/5.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "nuget.frameworks/5.7.0",
+      "hashPath": "nuget.frameworks.5.7.0.nupkg.sha512"
+    },
+    "NuGet.Packaging/5.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "nuget.packaging/5.7.0",
+      "hashPath": "nuget.packaging.5.7.0.nupkg.sha512"
+    },
+    "NuGet.Versioning/5.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "nuget.versioning/5.7.0",
+      "hashPath": "nuget.versioning.5.7.0.nupkg.sha512"
+    },
+    "runtime.native.System/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.native.system/4.3.0",
+      "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.Collections/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.collections/4.3.0",
+      "hashPath": "system.collections.4.3.0.nupkg.sha512"
+    },
+    "System.Collections.Concurrent/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.collections.concurrent/4.3.0",
+      "hashPath": "system.collections.concurrent.4.3.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.collections.immutable/5.0.0",
+      "hashPath": "system.collections.immutable.5.0.0.nupkg.sha512"
+    },
+    "System.Data.HashFunction.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.data.hashfunction.core/2.0.0",
+      "hashPath": "system.data.hashfunction.core.2.0.0.nupkg.sha512"
+    },
+    "System.Data.HashFunction.FNV/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.data.hashfunction.fnv/2.0.0",
+      "hashPath": "system.data.hashfunction.fnv.2.0.0.nupkg.sha512"
+    },
+    "System.Data.HashFunction.Interfaces/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.data.hashfunction.interfaces/2.0.0",
+      "hashPath": "system.data.hashfunction.interfaces.2.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.Debug/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.diagnostics.debug/4.3.0",
+      "hashPath": "system.diagnostics.debug.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.Process/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.diagnostics.process/4.3.0",
+      "hashPath": "system.diagnostics.process.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.Tools/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.diagnostics.tools/4.3.0",
+      "hashPath": "system.diagnostics.tools.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.Tracing/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.diagnostics.tracing/4.3.0",
+      "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
+    },
+    "System.Dynamic.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.dynamic.runtime/4.3.0",
+      "hashPath": "system.dynamic.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Globalization/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.globalization/4.3.0",
+      "hashPath": "system.globalization.4.3.0.nupkg.sha512"
+    },
+    "System.IO/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.io/4.3.0",
+      "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.IO.FileSystem/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.io.filesystem/4.3.0",
+      "hashPath": "system.io.filesystem.4.3.0.nupkg.sha512"
+    },
+    "System.IO.FileSystem.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.io.filesystem.primitives/4.3.0",
+      "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Linq/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.linq/4.3.0",
+      "hashPath": "system.linq.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Expressions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.linq.expressions/4.3.0",
+      "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "System.ObjectModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.objectmodel/4.3.0",
+      "hashPath": "system.objectmodel.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection/4.3.0",
+      "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.ILGeneration/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection.emit.ilgeneration/4.3.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.Lightweight/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection.emit.lightweight/4.3.0",
+      "hashPath": "system.reflection.emit.lightweight.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Extensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection.extensions/4.3.0",
+      "hashPath": "system.reflection.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection.primitives/4.3.0",
+      "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.reflection.typeextensions/4.3.0",
+      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
+    },
+    "System.Resources.ResourceManager/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.resources.resourcemanager/4.3.0",
+      "hashPath": "system.resources.resourcemanager.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.Runtime.Extensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.extensions/4.3.0",
+      "hashPath": "system.runtime.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Handles/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.handles/4.3.0",
+      "hashPath": "system.runtime.handles.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.InteropServices/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.interopservices/4.3.0",
+      "hashPath": "system.runtime.interopservices.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Loader/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.loader/4.3.0",
+      "hashPath": "system.runtime.loader.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Numerics/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.numerics/4.3.0",
+      "hashPath": "system.runtime.numerics.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.serialization.primitives/4.3.0",
+      "hashPath": "system.runtime.serialization.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Cng/5.0.0-preview.3.20214.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.cng/5.0.0-preview.3.20214.6",
+      "hashPath": "system.security.cryptography.cng.5.0.0-preview.3.20214.6.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Pkcs/5.0.0-preview.3.20214.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.pkcs/5.0.0-preview.3.20214.6",
+      "hashPath": "system.security.cryptography.pkcs.5.0.0-preview.3.20214.6.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.primitives/4.3.0",
+      "hashPath": "system.security.cryptography.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.protecteddata/4.5.0",
+      "hashPath": "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
+    },
+    "System.Security.Permissions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.permissions/4.5.0",
+      "hashPath": "system.security.permissions.4.5.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Encoding/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.text.encoding/4.3.0",
+      "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.Extensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.text.encoding.extensions/4.3.0",
+      "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.Text.RegularExpressions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.text.regularexpressions/4.3.0",
+      "hashPath": "system.text.regularexpressions.4.3.0.nupkg.sha512"
+    },
+    "System.Threading/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading/4.3.0",
+      "hashPath": "system.threading.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.AccessControl/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading.accesscontrol/4.5.0",
+      "hashPath": "system.threading.accesscontrol.4.5.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading.tasks/4.3.0",
+      "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "System.Threading.Thread/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading.thread/4.3.0",
+      "hashPath": "system.threading.thread.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.ThreadPool/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading.threadpool/4.3.0",
+      "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.valuetuple/4.4.0",
+      "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
+    },
+    "System.Xml.ReaderWriter/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.xml.readerwriter/4.3.0",
+      "hashPath": "system.xml.readerwriter.4.3.0.nupkg.sha512"
+    },
+    "System.Xml.XDocument/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.xml.xdocument/4.3.0",
+      "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "PostSharp/6.7.9-rc": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "postsharp/6.7.9-rc",
+      "hashPath": "postsharp.6.7.9-rc.nupkg.sha512"
+    },
+    "PostSharp.Compiler.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "PostSharp.Compiler.Engine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "PostSharp.Compiler.Hosting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "PostSharp.Compiler.Platform.NetCoreApp21/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "PostSharp.Compiler.Settings/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "Autofac/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "autofac/6.1.0",
+      "hashPath": "autofac.6.1.0.nupkg.sha512"
+    },
+    "Autofac.Extras.DynamicProxy/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "autofac.extras.dynamicproxy/6.0.0",
+      "hashPath": "autofac.extras.dynamicproxy.6.0.0.nupkg.sha512"
+    },
+    "AutoMapper/10.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "automapper/10.1.1",
+      "hashPath": "automapper.10.1.1.nupkg.sha512"
+    },
+    "Castle.Core/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "castle.core/4.4.0",
+      "hashPath": "castle.core.4.4.0.nupkg.sha512"
+    },
+    "FluentValidation/9.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "fluentvalidation/9.2.2",
+      "hashPath": "fluentvalidation.9.2.2.nupkg.sha512"
+    },
+    "log4net/2.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "log4net/2.0.12",
+      "hashPath": "log4net.2.0.12.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.0",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.0",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.http/2.2.2",
+      "hashPath": "microsoft.aspnetcore.http.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.http.features/5.0.0",
+      "hashPath": "microsoft.aspnetcore.http.features.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/5.0.0",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.WebUtilities/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.aspnetcore.webutilities/2.2.0",
+      "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.Data.SqlClient/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.data.sqlclient/2.0.1",
+      "hashPath": "microsoft.data.sqlclient.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.Data.SqlClient.SNI.runtime/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.data.sqlclient.sni.runtime/2.0.1",
+      "hashPath": "microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.entityframeworkcore/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.entityframeworkcore.relational/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.entityframeworkcore.sqlserver/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.caching.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.caching.memory/5.0.0",
+      "hashPath": "microsoft.extensions.caching.memory.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.configuration/2.0.0",
+      "hashPath": "microsoft.extensions.configuration.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.configuration.binder/2.0.0",
+      "hashPath": "microsoft.extensions.configuration.binder.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Core/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.identity.core/5.0.0",
+      "hashPath": "microsoft.extensions.identity.core.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Stores/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.identity.stores/5.0.0",
+      "hashPath": "microsoft.extensions.identity.stores.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.logging/5.0.0",
+      "hashPath": "microsoft.extensions.logging.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ObjectPool/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.objectpool/2.2.0",
+      "hashPath": "microsoft.extensions.objectpool.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.options/5.0.0",
+      "hashPath": "microsoft.extensions.options.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.options.configurationextensions/2.0.0",
+      "hashPath": "microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Identity.Client/4.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.identity.client/4.14.0",
+      "hashPath": "microsoft.identity.client.4.14.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/6.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.7.1",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/6.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.identitymodel.logging/6.7.1",
+      "hashPath": "microsoft.identitymodel.logging.6.7.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols/5.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.identitymodel.protocols/5.6.0",
+      "hashPath": "microsoft.identitymodel.protocols.5.6.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.identitymodel.protocols.openidconnect/5.6.0",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.5.6.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/6.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.identitymodel.tokens/6.7.1",
+      "hashPath": "microsoft.identitymodel.tokens.6.7.1.nupkg.sha512"
+    },
+    "Microsoft.Net.Http.Headers/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.net.http.headers/2.2.0",
+      "hashPath": "microsoft.net.http.headers.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.netcore.targets/1.1.3",
+      "hashPath": "microsoft.netcore.targets.1.1.3.nupkg.sha512"
+    },
+    "Serilog/2.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "serilog/2.10.0",
+      "hashPath": "serilog.2.10.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "serilog.sinks.file/4.1.0",
+      "hashPath": "serilog.sinks.file.4.1.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.MSSqlServer/5.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "serilog.sinks.mssqlserver/5.6.0",
+      "hashPath": "serilog.sinks.mssqlserver.5.6.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.PeriodicBatching/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "serilog.sinks.periodicbatching/2.3.0",
+      "hashPath": "serilog.sinks.periodicbatching.2.3.0.nupkg.sha512"
+    },
+    "System.AppContext/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.appcontext/4.3.0",
+      "hashPath": "system.appcontext.4.3.0.nupkg.sha512"
+    },
+    "System.Collections.NonGeneric/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.collections.nongeneric/4.3.0",
+      "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
+    },
+    "System.Collections.Specialized/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.collections.specialized/4.3.0",
+      "hashPath": "system.collections.specialized.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.TypeConverter/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.componentmodel.typeconverter/4.3.0",
+      "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.configuration.configurationmanager/4.5.0",
+      "hashPath": "system.configuration.configurationmanager.4.5.0.nupkg.sha512"
+    },
+    "System.Console/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.console/4.3.0",
+      "hashPath": "system.console.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.diagnostics.diagnosticsource/5.0.0",
+      "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.TraceSource/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.diagnostics.tracesource/4.3.0",
+      "hashPath": "system.diagnostics.tracesource.4.3.0.nupkg.sha512"
+    },
+    "System.Globalization.Calendars/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.globalization.calendars/4.3.0",
+      "hashPath": "system.globalization.calendars.4.3.0.nupkg.sha512"
+    },
+    "System.Globalization.Extensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.globalization.extensions/4.3.0",
+      "hashPath": "system.globalization.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.IdentityModel.Tokens.Jwt/6.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.identitymodel.tokens.jwt/6.7.1",
+      "hashPath": "system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512"
+    },
+    "System.IO.Compression/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.io.compression/4.3.0",
+      "hashPath": "system.io.compression.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Compression.ZipFile/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.io.compression.zipfile/4.3.0",
+      "hashPath": "system.io.compression.zipfile.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Pipelines/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.io.pipelines/5.0.0",
+      "hashPath": "system.io.pipelines.5.0.0.nupkg.sha512"
+    },
+    "System.Net.Http/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.net.http/4.3.0",
+      "hashPath": "system.net.http.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.net.primitives/4.3.0",
+      "hashPath": "system.net.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Sockets/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.net.sockets/4.3.0",
+      "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
+    },
+    "System.Private.DataContractSerialization/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.private.datacontractserialization/4.3.0",
+      "hashPath": "system.private.datacontractserialization.4.3.0.nupkg.sha512"
+    },
+    "System.Private.Uri/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.private.uri/4.3.2",
+      "hashPath": "system.private.uri.4.3.2.nupkg.sha512"
+    },
+    "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
+      "hashPath": "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Formatters/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.serialization.formatters/4.3.0",
+      "hashPath": "system.runtime.serialization.formatters.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Json/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.runtime.serialization.json/4.3.0",
+      "hashPath": "system.runtime.serialization.json.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Algorithms/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.algorithms/4.3.0",
+      "hashPath": "system.security.cryptography.algorithms.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Csp/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.csp/4.3.0",
+      "hashPath": "system.security.cryptography.csp.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Encoding/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.encoding/4.3.0",
+      "hashPath": "system.security.cryptography.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.openssl/4.3.0",
+      "hashPath": "system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.X509Certificates/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.cryptography.x509certificates/4.3.0",
+      "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
+    },
+    "System.Security.SecureString/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.security.securestring/4.3.0",
+      "hashPath": "system.security.securestring.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.text.encoding.codepages/4.7.0",
+      "hashPath": "system.text.encoding.codepages.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.text.encodings.web/4.5.0",
+      "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "System.Threading.Timer/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.threading.timer/4.3.0",
+      "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
+    },
+    "System.Xml.XmlDocument/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.xml.xmldocument/4.3.0",
+      "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "System.Xml.XmlSerializer/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "system.xml.xmlserializer/4.3.0",
+      "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": "",
+      "path": "",
+      "hashPath": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "microsoft.netcore.platforms/1.1.1",
+      "hashPath": "microsoft.netcore.platforms.1.1.1.nupkg.sha512"
+    },
+    "NETStandard.Library/1.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "netstandard.library/1.6.1",
+      "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
+    },
+    "PostSharp.Redist/6.7.9-rc": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "postsharp.redist/6.7.9-rc",
+      "hashPath": "postsharp.redist.6.7.9-rc.nupkg.sha512"
+    },
+    "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.native.System.IO.Compression/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.native.system.io.compression/4.3.0",
+      "hashPath": "runtime.native.system.io.compression.4.3.0.nupkg.sha512"
+    },
+    "runtime.native.System.Net.Http/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.native.system.net.http/4.3.0",
+      "hashPath": "runtime.native.system.net.http.4.3.0.nupkg.sha512"
+    },
+    "runtime.native.System.Security.Cryptography.Apple/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.native.system.security.cryptography.apple/4.3.0",
+      "hashPath": "runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512"
+    },
+    "runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
+      "hashPath": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512"
+    },
+    "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "",
+      "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    }
+  }
+}
