@@ -11,6 +11,8 @@ namespace Core.Utilities
         public static string SaveFile(string foldername, IFormFile file)
         {
             string filename = Guid.NewGuid().ToString().Substring(0, 9) + "_" + file.FileName;
+	    if (!Directory.Exists(@"Uploads//" + foldername))
+            Directory.CreateDirectory(@"Uploads//" + foldername);
             var path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads//" + foldername, filename);
             using (var stream = new FileStream(path, FileMode.Create))
             {
