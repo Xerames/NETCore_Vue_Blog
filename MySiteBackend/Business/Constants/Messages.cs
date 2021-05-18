@@ -37,6 +37,9 @@ namespace Business.Constants
         public static string RoleAssignedSuccessfully => "Role assigned successfully";
         public static string PasswordChangedSuccessfully => "Password changed successfully";
         public static string CurrentPasswordIsFalse => "Current password is false";
+		
+		public static string ThisReplyDoesNotBelongUser => "This reply does not belong to that user";
+        public static string ThisCommentDoesNotBelongUser => "This comment does not belong to that user";
 
         public static string PasswordDontMatchWithConfirmation => "Password doesn't match its confirmation";
         public static string PasswordResetSuccessfully => "Password has been reset successfully";

@@ -54,6 +54,10 @@ namespace Business.Concrete
             {
                 throw new ApiException(404, Messages.NotFound);
             }
+			if (comment.UserId != model.UserId)
+            {
+                throw new ApiException(400, Messages.ThisCommentDoesNotBelongUser);
+            }
             else
             {
                 _mapper.Map(model, comment);
@@ -83,6 +87,11 @@ namespace Business.Concrete
             {
                 throw new ApiException(404, Messages.NotFound);
             }
+			if (comment.UserId != model.UserId)
+            {
+                throw new ApiException(400, Messages.ThisCommentDoesNotBelongUser);
+            }
+			
             else 
             {
                 _mapper.Map(model, comment);
