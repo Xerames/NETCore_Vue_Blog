@@ -6,12 +6,7 @@ export function getRoles(context) {
 
 export function addRole(context, role) {
   return this.$axios
-    .post("roles/addrole", role, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("roles/addrole", role)
     .then(response => {
       if (response.data.success) {
         context.commit("addRole", response.data.data);
@@ -25,12 +20,7 @@ export function addRole(context, role) {
 
 export function updateRole(context, role) {
   return this.$axios
-    .put("roles/updaterole", role, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("roles/updaterole", role)
     .then(response => {
       if (response.data.success) {
         context.commit("updateRole", role);
@@ -44,12 +34,7 @@ export function updateRole(context, role) {
 
 export function deleteRole(context, id) {
   return this.$axios
-    .delete("roles/deleterole/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("roles/deleterole/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteRole", id);
@@ -59,12 +44,7 @@ export function deleteRole(context, id) {
 
 export function getAssignedRoles(context, userid) {
   return this.$axios
-    .get("roles/getassignedroles/" + userid, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("roles/getassignedroles/" + userid)
     .then(response => {
       context.commit("setUserRoles", response.data.data);
       return response.data.data;
@@ -73,12 +53,7 @@ export function getAssignedRoles(context, userid) {
 
 export function roleAssign(context, assignroles) {
   return this.$axios
-    .post("roles/roleassign/", assignroles, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("roles/roleassign/", assignroles)
     .then(response => {
       return response.data;
     })

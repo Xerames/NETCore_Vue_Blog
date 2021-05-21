@@ -1,11 +1,6 @@
 export function getSlider(context, id) {
   return this.$axios
-    .get("sliders/getslider/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("sliders/getslider/" + id)
     .then(response => {
       return response.data;
     })
@@ -22,12 +17,7 @@ export function getSliders(context) {
 
 export function addSlider(context, slider) {
   return this.$axios
-    .post("sliders/addslider", slider, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("sliders/addslider", slider)
     .then(response => {
       if (response.data.success) {
         context.commit("addSlider", response.data.data);
@@ -41,12 +31,7 @@ export function addSlider(context, slider) {
 
 export function updateSlider(context, slider) {
   return this.$axios
-    .put("sliders/updateslider", slider, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("sliders/updateslider", slider)
     .then(response => {
       if (response.data.success) {
         context.commit("updateSlider", slider);
@@ -60,12 +45,7 @@ export function updateSlider(context, slider) {
 
 export function deleteSlider(context, id) {
   return this.$axios
-    .delete("sliders/deleteslider/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("sliders/deleteslider/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteSlider", id);
@@ -75,12 +55,7 @@ export function deleteSlider(context, id) {
 
 export function uploadimage(context, image) {
   return this.$axios
-    .post("sliders/uploadimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("sliders/uploadimage", image)
     .then(response => {
       return response.data.data;
     });
@@ -88,12 +63,7 @@ export function uploadimage(context, image) {
 
 export function deleteimage(context, image) {
   return this.$axios
-    .post("sliders/deleteimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("sliders/deleteimage", image)
     .then(response => {
       return response.data;
     });

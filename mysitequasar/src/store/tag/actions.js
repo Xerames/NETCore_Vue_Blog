@@ -6,12 +6,7 @@ export function getTags(context) {
 
 export function addTag(context, tag) {
   return this.$axios
-    .post("tags/addtag", tag, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("tags/addtag", tag)
     .then(response => {
       if (response.data.success) {
         context.commit("addTag", response.data.data);
@@ -25,12 +20,7 @@ export function addTag(context, tag) {
 
 export function updateTag(context, tag) {
   return this.$axios
-    .put("tags/updatetag", tag, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("tags/updatetag", tag)
     .then(response => {
       if (response.data.success) {
         context.commit("updateTag", tag);
@@ -44,12 +34,7 @@ export function updateTag(context, tag) {
 
 export function deleteTag(context, id) {
   return this.$axios
-    .delete("tags/deletetag/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("tags/deletetag/" + id)
     .then(response => {
       context.commit("deleteTag", id);
     })
@@ -60,12 +45,7 @@ export function deleteTag(context, id) {
 
 export function deleteBlogFromTag(context, data) {
   return this.$axios
-    .post("tags/deleteblogfromtag", data, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("tags/deleteblogfromtag", data)
     .then(response => {
       return response.data;
     })
@@ -76,12 +56,7 @@ export function deleteBlogFromTag(context, data) {
 
 export function getTag(context, id) {
   return this.$axios
-    .get("tags/gettag/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("tags/gettag/" + id)
     .then(response => {
       return response.data;
     })
@@ -92,12 +67,7 @@ export function getTag(context, id) {
 
 export function getTagWithBlogs(context, id) {
   return this.$axios
-    .get("tags/gettagwithblogs/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("tags/gettagwithblogs/" + id)
     .then(response => {
       return response.data;
     });

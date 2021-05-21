@@ -1,11 +1,6 @@
 export function getMinistration(context, id) {
   return this.$axios
-    .get("ministrations/getministration/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("ministrations/getministration/" + id)
     .then(response => {
       return response.data;
     })
@@ -22,12 +17,7 @@ export function getMinistrations(context) {
 
 export function addMinistration(context, ministration) {
   return this.$axios
-    .post("ministrations/addministration", ministration, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("ministrations/addministration", ministration)
     .then(response => {
       if (response.data.success) {
         context.commit("addMinistration", response.data.data);
@@ -41,12 +31,7 @@ export function addMinistration(context, ministration) {
 
 export function updateMinistration(context, ministration) {
   return this.$axios
-    .put("ministrations/updateministration", ministration, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("ministrations/updateministration", ministration)
     .then(response => {
       if (response.data.success) {
         context.commit("updateMinistration", ministration);
@@ -60,12 +45,7 @@ export function updateMinistration(context, ministration) {
 
 export function deleteMinistration(context, id) {
   return this.$axios
-    .delete("ministrations/deleteministration/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("ministrations/deleteministration/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteMinistration", id);
@@ -75,12 +55,7 @@ export function deleteMinistration(context, id) {
 
 export function uploadimage(context, image) {
   return this.$axios
-    .post("ministrations/uploadimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("ministrations/uploadimage", image)
     .then(response => {
       return response.data.data;
     });
@@ -88,12 +63,7 @@ export function uploadimage(context, image) {
 
 export function deleteimage(context, image) {
   return this.$axios
-    .post("ministrations/deleteimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("ministrations/deleteimage", image)
     .then(response => {
       return response.data;
     });

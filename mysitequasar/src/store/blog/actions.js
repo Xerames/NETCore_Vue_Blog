@@ -43,12 +43,7 @@ export function getBlogsByTagName(context, payload) {
 
 export function addBlog(context, blog) {
   return this.$axios
-    .post("blogs/addblog", blog, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("blogs/addblog", blog)
     .then(response => {
       if (response.data.success) {
         context.commit("addBlog", response.data.data);
@@ -62,12 +57,7 @@ export function addBlog(context, blog) {
 
 export function updateBlog(context, blog) {
   return this.$axios
-    .put("blogs/updateblog", blog, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("blogs/updateblog", blog)
     .then(response => {
       if (response.data.success) {
         context.commit("updateBlog", blog);
@@ -81,12 +71,7 @@ export function updateBlog(context, blog) {
 
 export function deleteBlog(context, id) {
   return this.$axios
-    .delete("blogs/deleteblog/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("blogs/deleteblog/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteBlog", id);
@@ -98,12 +83,7 @@ export function deleteBlog(context, id) {
 
 export function getBlog(context, id) {
   return this.$axios
-    .get("blogs/getblog/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("blogs/getblog/" + id)
     .then(response => {
       return response.data;
     })
@@ -114,12 +94,7 @@ export function getBlog(context, id) {
 
 export function getBlogWithCategoryAndTags(context, id) {
   return this.$axios
-    .get("blogs/getblogwithcategoryandtags/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("blogs/getblogwithcategoryandtags/" + id)
     .then(response => {
       context.commit("setBlogCategoryAndTags", response.data);
       return response.data;
@@ -152,12 +127,7 @@ export function searchBlogs(context, payload) {
 
 export function uploadimage(context, image) {
   return this.$axios
-    .post("blogs/uploadimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("blogs/uploadimage", image)
     .then(response => {
       return response.data.data;
     });
@@ -165,12 +135,7 @@ export function uploadimage(context, image) {
 
 export function deleteimage(context, image) {
   return this.$axios
-    .post("blogs/deleteimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("blogs/deleteimage", image)
     .then(response => {
       return response.data;
     });

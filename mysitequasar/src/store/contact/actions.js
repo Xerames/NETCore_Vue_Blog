@@ -1,11 +1,6 @@
 export function getContact(context, id) {
   return this.$axios
-    .get("contacts/getcontact/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("contacts/getcontact/" + id)
     .then(response => {
       return response.data;
     })
@@ -22,12 +17,7 @@ export function getContacts(context) {
 
 export function addContact(context, contact) {
   return this.$axios
-    .post("contacts/addcontact", contact, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("contacts/addcontact", contact)
     .then(response => {
       if (response.data.success) {
         context.commit("addContact", response.data.data);
@@ -41,12 +31,7 @@ export function addContact(context, contact) {
 
 export function updateContact(context, contact) {
   return this.$axios
-    .put("contacts/updatecontact", contact, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("contacts/updatecontact", contact)
     .then(response => {
       if (response.data.success) {
         context.commit("updateContact", contact);
@@ -60,12 +45,7 @@ export function updateContact(context, contact) {
 
 export function deleteContact(context, id) {
   return this.$axios
-    .delete("contacts/deletecontact/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("contacts/deletecontact/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteContact", id);

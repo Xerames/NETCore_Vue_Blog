@@ -1,11 +1,6 @@
 export function getCategory(context, id) {
   return this.$axios
-    .get("categories/getcategory/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("categories/getcategory/" + id)
     .then(response => {
       return response.data;
     })
@@ -22,12 +17,7 @@ export function getCategories(context) {
 
 export function addCategory(context, category) {
   return this.$axios
-    .post("categories/addcategory", category, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("categories/addcategory", category)
     .then(response => {
       context.commit("addCategory", response.data.data);
       return response.data;
@@ -39,12 +29,7 @@ export function addCategory(context, category) {
 
 export function updateCategory(context, category) {
   return this.$axios
-    .put("categories/updatecategory", category, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("categories/updatecategory", category)
     .then(response => {
       if (response.data.success) {
         context.commit("updateCategory", category);
@@ -58,12 +43,7 @@ export function updateCategory(context, category) {
 
 export function deleteCategory(context, id) {
   return this.$axios
-    .delete("categories/deletecategory/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("categories/deletecategory/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteCategory", id);

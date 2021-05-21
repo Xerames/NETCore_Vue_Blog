@@ -24,12 +24,7 @@ export function setTimeoutTimer(context, expiresIn) {
 
 export function getUserWithRoles(context) {
   return this.$axios
-    .get("users/getuserwithroles", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("users/getuserwithroles")
     .then(response => {
       context.commit("setUserWithRoles", response.data.data);
     });
@@ -76,12 +71,7 @@ export function logout(context) {
     RefreshToken: refreshtoken
   };
   return this.$axios
-    .post("auths/logout", payload, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("auths/logout", payload)
     .then(() => {
       context.commit("logout");
     });
@@ -89,12 +79,7 @@ export function logout(context) {
 
 export function updateUser(context, user) {
   return this.$axios
-    .put("users/updateuser", user, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("users/updateuser", user)
     .then(response => {
       context.commit("updateUser", user);
       return response.data;
@@ -106,12 +91,7 @@ export function updateUser(context, user) {
 
 export function updateUserByAdmin(context, user) {
   return this.$axios
-    .put("users/updateuserbyadmin", user, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("users/updateuserbyadmin", user)
     .then(response => {
       if (response.data.success) {
         return response.data;
@@ -124,12 +104,7 @@ export function updateUserByAdmin(context, user) {
 
 export function passwordChangeByAdmin(context, data) {
   return this.$axios
-    .put("users/passwordchangebyadmin", data, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("users/passwordchangebyadmin", data)
     .then(response => {
       if (response.data.success) {
         return response.data;
@@ -142,12 +117,7 @@ export function passwordChangeByAdmin(context, data) {
 
 export function deleteUser(context, userid) {
   return this.$axios
-    .delete("users/deleteuser/" + userid, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("users/deleteuser/" + userid)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteUser", userid);
@@ -160,12 +130,7 @@ export function deleteUser(context, userid) {
 
 export function changePassword(context, data) {
   return this.$axios
-    .post("users/passwordchange", data, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("users/passwordchange", data)
     .then(response => {
       if (response.data.success) {
         return response.data;
@@ -177,12 +142,7 @@ export function changePassword(context, data) {
 }
 export function addorupdatePhoto(context, data) {
   return this.$axios
-    .post("users/addorupdatephoto", data, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("users/addorupdatephoto", data)
     .then(response => {
       if (response.data.success) {
         context.dispatch("getUserWithRoles");
@@ -196,12 +156,7 @@ export function addorupdatePhoto(context, data) {
 
 export function deleteuserPhoto(context) {
   return this.$axios
-    .post("users/deleteuserphoto", null, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("users/deleteuserphoto", null)
     .then(response => {
       if (response.data.success) {
         context.dispatch("getUserWithRoles");
@@ -215,12 +170,7 @@ export function deleteuserPhoto(context) {
 
 export function getUserswithRoles(context) {
   return this.$axios
-    .get("users/getuserswithroles", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("users/getuserswithroles")
     .then(response => {
       context.commit("setUsersdata", response.data.data);
     });
@@ -228,12 +178,7 @@ export function getUserswithRoles(context) {
 
 export function GetProfileData(context) {
   return this.$axios
-    .get("users/getuserwithroles", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("users/getuserwithroles")
     .then(response => {
       return response.data.data.user;
     });
@@ -263,12 +208,7 @@ export function resetPassword(context, data) {
 
 export function getUser(context, userid) {
   return this.$axios
-    .get("users/getuser/" + userid, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("users/getuser/" + userid)
     .then(response => {
       return response.data.data;
     });
@@ -276,12 +216,7 @@ export function getUser(context, userid) {
 
 export function uploadimage(context, image) {
   return this.$axios
-    .post("users/uploadimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("users/uploadimage", image)
     .then(response => {
       return response.data.data;
     });
@@ -289,12 +224,7 @@ export function uploadimage(context, image) {
 
 export function deleteimage(context, image) {
   return this.$axios
-    .post("users/deleteimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("users/deleteimage", image)
     .then(response => {
       return response.data;
     });

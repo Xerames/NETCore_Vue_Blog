@@ -1,11 +1,6 @@
 export function getReplies(context) {
   return this.$axios
-    .get("replies/getreplies", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("replies/getreplies")
     .then(response => {
       context.commit("setReplies", response.data);
     });
@@ -13,12 +8,7 @@ export function getReplies(context) {
 
 export function addReply(context, reply) {
   return this.$axios
-    .post("replies/addreply", reply, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("replies/addreply", reply)
     .then(response => {
       if (response.data.success) {
         return response.data;
@@ -31,12 +21,7 @@ export function addReply(context, reply) {
 
 export function updateReply(context, reply) {
   return this.$axios
-    .put("replies/updatereply", reply, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("replies/updatereply", reply)
     .then(response => {
       if (response.data.success) {
         return response.data;
@@ -49,12 +34,7 @@ export function updateReply(context, reply) {
 
 export function updateReplyByAdmin(context, reply) {
   return this.$axios
-    .put("replies/updatereplybyadmin", reply, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("replies/updatereplybyadmin", reply)
     .then(response => {
       if (response.data.success) {
         context.commit("updateReplyByAdmin", reply);
@@ -68,12 +48,7 @@ export function updateReplyByAdmin(context, reply) {
 
 export function deleteReply(context, id) {
   return this.$axios
-    .delete("replies/deletereply/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("replies/deletereply/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteReply", id);
@@ -83,12 +58,7 @@ export function deleteReply(context, id) {
 
 export function getReply(context, id) {
   return this.$axios
-    .get("replies/getreply/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("replies/getreply/" + id)
     .then(response => {
       return response.data;
     })

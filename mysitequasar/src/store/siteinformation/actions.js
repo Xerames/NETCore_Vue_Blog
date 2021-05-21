@@ -1,11 +1,6 @@
 export function getSiteInformation(context, id) {
   return this.$axios
-    .get("siteinformations/getsiteinformation/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .get("siteinformations/getsiteinformation/" + id)
     .then(response => {
       return response.data;
     })
@@ -24,12 +19,7 @@ export function getSiteInformations(context, id) {
 
 export function addSiteInformation(context, siteinformation) {
   return this.$axios
-    .post("siteinformations/addsiteinformation", siteinformation, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("siteinformations/addsiteinformation", siteinformation,)
     .then(response => {
       if (response.data.success) {
         context.commit("addSiteInformation", response.data.data);
@@ -43,12 +33,7 @@ export function addSiteInformation(context, siteinformation) {
 
 export function updateSiteInformation(context, siteinformation) {
   return this.$axios
-    .put("siteinformations/updatesiteinformation", siteinformation, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .put("siteinformations/updatesiteinformation", siteinformation)
     .then(response => {
       if (response.data.success) {
         context.commit("updateSiteInformation", siteinformation);
@@ -62,12 +47,7 @@ export function updateSiteInformation(context, siteinformation) {
 
 export function deleteSiteInformation(context, id) {
   return this.$axios
-    .delete("siteinformations/deletesiteinformation/" + id, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .delete("siteinformations/deletesiteinformation/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteSiteInformation", id);
@@ -77,12 +57,7 @@ export function deleteSiteInformation(context, id) {
 
 export function uploadimage(context, image) {
   return this.$axios
-    .post("siteinformations/uploadimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("siteinformations/uploadimage", image)
     .then(response => {
       return response.data.data;
     });
@@ -90,12 +65,7 @@ export function uploadimage(context, image) {
 
 export function deleteimage(context, image) {
   return this.$axios
-    .post("siteinformations/deleteimage", image, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
-      }
-    })
+    .post("siteinformations/deleteimage", image)
     .then(response => {
       return response.data;
     });
