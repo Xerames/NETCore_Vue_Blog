@@ -39,16 +39,33 @@ namespace Core.Aspects.Autofac.Exception
 
         private string GetLogDetail(IInvocation invocation, System.Exception e)
         {
-            var ex = e.InnerException != null ? (ApiException)e.InnerException : (ApiException)e;
-            var errorlogDetail = new ErrorLog
+           if (e.InnerException is ApiException || e.GetType() == typeof(ApiException))
             {
-                Errors = ex.Errors,
-                MethodName = invocation.Method.Name,
-                ManagerName = invocation.MethodInvocationTarget.ReflectedType.Name,
-                UserId = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value,
-                Username = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value,
-            };
-            return JsonConvert.SerializeObject(errorlogDetail);
+                var ex = e.InnerException != null ? (ApiException)e.InnerException : (ApiException)e;
+                var errorlogDetail = new ErrorLog
+                {
+                    Errors = ex.Errors,
+                    MethodName = invocation.Method.Name,
+                    ManagerName = invocation.MethodInvocationTarget.ReflectedType.Name,
+                    UserId = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value,
+                    Username = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value,
+                };
+                return JsonConvert.SerializeObject(errorlogDetail);
+            }
+            else
+            {
+                List<string> exceptions = new List<string>();
+                exceptions.Add(e.Message);
+                var errorlogDetail = new ErrorLog
+                {
+                    Errors = exceptions,
+                    MethodName = invocation.Method.Name,
+                    ManagerName = invocation.MethodInvocationTarget.ReflectedType.Name,
+                    UserId = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value,
+                    Username = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value,
+                };
+                return JsonConvert.SerializeObject(errorlogDetail);
+            }
         }
     }
 }
