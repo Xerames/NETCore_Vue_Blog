@@ -9,7 +9,7 @@
 - Database Seeding
 - Custom Exception Handling Middleware
 - Complete User Management  (Register / Generate Token / Forgot Password / Confirmation Mail)
-- Logging (Serilog),Caching (Memory,Redis),Validation (Fluent Validation),Transaction,Exception(Exception Log Aspect does not work in asynchronous methods,I'm trying to solve ),Performance with Aspects  (Autofac,Castle.DynamicProxy)
+- Logging (Serilog),Caching (Memory,Redis),Validation (Fluent Validation),Transaction,Exception(Exception Log Aspect does not work in asynchronous methods,I'm trying to solve ),Performance with Aspects (Autofac,Castle.DynamicProxy)
 
 ## How To Start Asp Net Core API
 
