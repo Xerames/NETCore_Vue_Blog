@@ -40,8 +40,8 @@ namespace Core.Aspects.Autofac.Logging
 				Data = invocation.Arguments,
 				MethodName = invocation.Method.Name,
 				ManagerName = invocation.MethodInvocationTarget.ReflectedType.Name,
-				UserId = (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value == null) ? "?": _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value,
-				Username= (_httpContextAccessor.HttpContext == null || _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value == null) ? "?" : _httpContextAccessor.HttpContext.User.Claims.First(x => x.Type == ClaimTypes.Name).Value,
+				UserId = (_httpContextAccessor?.HttpContext == null || _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value == null) ? "?" : _httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value,
+                    		Username = (_httpContextAccessor?.HttpContext == null || _httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Name)?.Value == null) ? "?" : _httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Name)?.Value,
 			};
 			return JsonConvert.SerializeObject(logDetail);
 		}

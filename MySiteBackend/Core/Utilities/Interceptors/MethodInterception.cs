@@ -19,14 +19,18 @@ namespace Core.Utilities.Interceptors
             try
             {
                 invocation.Proceed();
-                var result = invocation.ReturnValue as Task;
-                if (result != null)
-                    result.Wait();
+                Task result = invocation.ReturnValue as Task;
+                result?.Wait();
+                if (result?.IsFaulted ?? false)
+                    throw result.Exception?.InnerException ?? result.Exception;
             }
             catch (Exception e)
             {
                 isSuccess = false;
-                OnException(invocation, e);
+                if (invocation.ReturnValue is Task result && result.IsFaulted)
+                    OnException(invocation, result.Exception?.InnerException ?? result.Exception ?? e);
+                else
+                    OnException(invocation, e);
                 throw;
             }
             finally
