@@ -1,10 +1,10 @@
-# ASP NET Core with VueJS (Quasar Framework) Blog Project
+# ASP NET Core with VueJS 2 (Quasar Framework) Blog Project
 
 ## Features
 - Entity Framework Core – Code First 
 - Response Wrappers
 - Pagination,Search
-- Net Core Identity with JWT Authentication,refresh token
+- Net Core Identity with JWT Authentication,Refresh Token
 - Role Based Authorization
 - Database Seeding
 - Custom Exception Handling Middleware
@@ -28,9 +28,7 @@ Password : 159357456qW
 
 ## How To Start Quasar Project
 
-Project requires [Node.js](https://nodejs.org/) , [Quasar Framework](https://quasar.dev) 
-
-Quasar Admin Template : https://github.com/mayank091193/quasar-admin-crm
+Project requires [Quasar Framework](https://quasar.dev) 
 
 You must edit  mysitequasar\src\store\siteinformation\state.js 
 apiurl and defaultphoto url 
@@ -39,5 +37,6 @@ apiurl and defaultphoto url
 npm install
 quasar dev
 ```
+
 
 
