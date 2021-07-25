@@ -20,7 +20,7 @@ namespace DataAccess.Seeds
                 NormalizedUserName = "ADMIN",
                 FirstName = "Admin",
                 LastName = "Admin",
-                Email = "Admin@gmail.com.com",
+                Email = "Admin@gmail.com",
                 NormalizedEmail = "ADMIN@GMAIL.COM",
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true,
