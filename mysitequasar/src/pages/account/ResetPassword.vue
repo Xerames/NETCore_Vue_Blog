@@ -126,15 +126,14 @@ export default {
       var payload = {
         Email: this.$route.params.email,
         Token: this.$route.params.token,
-        NewPassword: this.NewPassword,
-        ConfirmPassword: this.ConfirmPassword
+        NewPassword: this.newpassword,
+        ConfirmPassword: this.confirmpassword
       };
       this.$store
         .dispatch("user/resetPassword", payload 
         .then(response => {
           this.show = true;
           this.message = response.message;
-          this.errors = response.errors;
         })
         .catch(error => {
           this.show = true;

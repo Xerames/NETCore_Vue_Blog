@@ -81,7 +81,7 @@ export default {
   methods: {
     ForgetPassword() {
       var payload = {
-        Email: this.email
+        Email: this.Email
       };
       this.$store
         .dispatch("user/forgetPassword", payload 
