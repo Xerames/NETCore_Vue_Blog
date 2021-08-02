@@ -80,10 +80,11 @@ export default {
   },
   methods: {
     ForgetPassword() {
-      const data = new FormData();
-      data.append("Email", this.Email);
+      var payload = {
+        Email: this.email
+      };
       this.$store
-        .dispatch("user/forgetPassword", data)
+        .dispatch("user/forgetPassword", payload 
         .then(response => {
           this.show = true;
           this.message = response.message;

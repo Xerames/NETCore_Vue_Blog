@@ -123,13 +123,14 @@ export default {
   },
   methods: {
     ResetPassword() {
-      const data = new FormData();
-      data.append("NewPassword", this.newpassword);
-      data.append("ConfirmPassword", this.confirmpassword);
-      data.append("Email", this.$route.params.email);
-      data.append("Token", this.$route.params.token);
+      var payload = {
+        Email: this.$route.params.email,
+        Token: this.$route.params.token,
+        NewPassword: this.NewPassword,
+        ConfirmPassword: this.ConfirmPassword
+      };
       this.$store
-        .dispatch("user/resetPassword", data)
+        .dispatch("user/resetPassword", payload 
         .then(response => {
           this.show = true;
           this.message = response.message;
