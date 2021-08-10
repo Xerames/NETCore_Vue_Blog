@@ -84,7 +84,7 @@ export default {
         Email: this.Email
       };
       this.$store
-        .dispatch("user/forgetPassword", payload 
+        .dispatch("user/forgetPassword", payload) 
         .then(response => {
           this.show = true;
           this.message = response.message;

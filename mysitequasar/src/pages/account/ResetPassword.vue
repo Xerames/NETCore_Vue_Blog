@@ -130,7 +130,7 @@ export default {
         ConfirmPassword: this.confirmpassword
       };
       this.$store
-        .dispatch("user/resetPassword", payload 
+        .dispatch("user/resetPassword", payload) 
         .then(response => {
           this.show = true;
           this.message = response.message;
