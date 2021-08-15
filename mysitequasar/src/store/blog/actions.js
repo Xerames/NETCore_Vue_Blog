@@ -46,7 +46,6 @@ export function addBlog(context, blog) {
     .post("blogs/addblog", blog)
     .then(response => {
       if (response.data.success) {
-        context.commit("addBlog", response.data.data);
         return response.data;
       }
     })
@@ -60,7 +59,6 @@ export function updateBlog(context, blog) {
     .put("blogs/updateblog", blog)
     .then(response => {
       if (response.data.success) {
-        context.commit("updateBlog", blog);
         return response.data;
       }
     })

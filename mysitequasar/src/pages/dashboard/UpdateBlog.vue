@@ -339,7 +339,7 @@ export default {
       this.$store
         .dispatch("blog/getBlogWithCategoryAndTags", this.$route.params.id)
         .then(response => {
-          this.blog = response;
+          this.blog = {...response};
           this.currentimage = response.image;
           const arr = new Array();
           for (let i = 0; i < this.blog.blogTags.length; i++) {
