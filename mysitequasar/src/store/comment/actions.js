@@ -59,7 +59,7 @@ export function updateCommentByAdmin(context, comment) {
 
 export function deleteComment(context, id) {
   return this.$axios
-    .post("comments/deletecomment/" + id)
+    .delete("comments/deletecomment/" + id)
     .then(response => {
       if (response.data.success) {
         context.commit("deleteComment", id);
