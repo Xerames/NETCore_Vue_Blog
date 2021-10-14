@@ -1,7 +1,5 @@
 # ASP NET Core with VueJS 2 (Quasar Framework) Blog Project
 
-<a href="https://gifyu.com/image/ezpe"><img src="https://s9.gifyu.com/images/Blog.gif" alt="Blog.gif" border="0" /></a>
-
 ## Features
 - Entity Framework Core – Code First 
 - Response Wrappers
