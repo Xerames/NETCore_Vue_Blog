@@ -160,6 +160,13 @@ namespace WebAPI
             app.ConfigureCustomExceptionMiddleware();
             app.UseHttpsRedirection();
             
+            var path = Path.Combine(env.ContentRootPath, "Uploads");
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
