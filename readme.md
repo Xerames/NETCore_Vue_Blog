@@ -5,6 +5,7 @@
 ## Features
 - Entity Framework Core – Code First 
 - Response Wrappers
+- Repository Pattern
 - Pagination,Search
 - Net Core Identity with JWT Authentication,Refresh Token
 - Role Based Authorization
