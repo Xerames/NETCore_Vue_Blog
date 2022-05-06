@@ -1,4 +1,4 @@
-# ASP NET Core with VueJS 2 (Quasar Framework) Blog Project
+# .NET5 with VueJS 2 (Quasar Framework) Blog Project
 
 <img alt="Blog Gif" src="assets/Blog.gif"> </img>
 
